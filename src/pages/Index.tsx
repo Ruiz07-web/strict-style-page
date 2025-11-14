@@ -13,53 +13,53 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="bg-primary py-4 px-6 shadow-md">
-        <div className="max-w-7xl mx-auto flex items-center gap-3">
-          <img src={logoIcon} alt="Logo" className="w-12 h-12 object-contain" />
-          <h1 className="text-primary-foreground text-2xl md:text-3xl font-serif tracking-wide">
+      <header className="bg-primary py-4 px-4 md:px-6 shadow-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-center md:justify-start gap-3">
+          <img src={logoIcon} alt="Logo Anne" className="w-10 h-10 md:w-12 md:h-12 object-contain flex-shrink-0" />
+          <h1 className="text-primary-foreground text-xl md:text-2xl lg:text-3xl font-serif tracking-wide text-center md:text-left">
             VISÕES DE ANNE SHIRLEY
           </h1>
         </div>
       </header>
 
       {/* Navigation */}
-      <nav className="bg-primary/90 py-3 px-6 border-t border-primary-foreground/20">
+      <nav className="bg-primary/90 py-3 px-4 md:px-6 border-t border-primary-foreground/20">
         <div className="max-w-7xl mx-auto">
-          <ul className="flex flex-wrap items-center justify-between gap-4 md:gap-8">
+          <ul className="flex flex-wrap items-center justify-center md:justify-between gap-3 md:gap-6 lg:gap-8">
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <Home className="w-5 h-5" />
-                <span>Início</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <Home className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="hidden sm:inline">Início</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <Film className="w-5 h-5" />
-                <span>Episódios</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <Film className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="hidden sm:inline">Episódios</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <div className="border border-primary-foreground rounded px-2 py-0.5 text-xs">10</div>
-                <span>Temporadas</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <div className="border border-primary-foreground rounded px-1.5 md:px-2 py-0.5 text-xs">10</div>
+                <span className="hidden sm:inline">Temporadas</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <Users className="w-5 h-5" />
-                <span>Personagens</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <Users className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="hidden sm:inline">Personagens</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <Book className="w-5 h-5" />
-                <span>Livros & Autora</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <Book className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="hidden sm:inline">Livros & Autora</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-sm md:text-base">
-                <MessageCircle className="w-5 h-5" />
-                <span>Comunidade</span>
+              <a href="#" className="flex items-center gap-1.5 md:gap-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors text-xs md:text-sm lg:text-base">
+                <MessageCircle className="w-4 h-4 md:w-5 md:h-5" />
+                <span className="hidden sm:inline">Comunidade</span>
               </a>
             </li>
           </ul>
@@ -67,37 +67,37 @@ const Index = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
         {/* Image Gallery Top */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <img src={anneImage1} alt="Anne Shirley" className="w-full h-64 object-cover rounded shadow-lg" />
-          <img src={anneImage2} alt="Anne e Diana" className="w-full h-64 object-cover rounded shadow-lg" />
-          <img src={anneBook} alt="Livro Anne de Green Gables" className="w-full h-64 object-cover rounded shadow-lg" />
-          <img src={anneImage4} alt="Anne" className="w-full h-64 object-cover rounded shadow-lg" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
+          <img src={anneImage1} alt="Anne Shirley" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
+          <img src={anneImage2} alt="Anne e Diana" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
+          <img src={anneBook} alt="Livro Anne de Green Gables" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
+          <img src={anneImage4} alt="Anne" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
         </div>
 
         {/* Text Content */}
-        <div className="mb-8">
-          <p className="text-foreground text-base md:text-lg leading-relaxed mb-4 indent-8">
+        <div className="mb-6 md:mb-8">
+          <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-4 indent-6 md:indent-8">
             Anne With An E é uma aclamada série de drama baseada na obra clássica Anne de Green Gables, de L.M. Montgomery, mas com uma abordagem mais moderna e profunda.
           </p>
-          <p className="text-foreground text-base md:text-lg leading-relaxed mb-4 indent-8">
+          <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-4 indent-6 md:indent-8">
             Ambientada no final do século XIX, na pitoresca e pacata ilha do Príncipe Eduardo, a história acompanha Anne Shirley Cuthbert, uma órfã de 13 anos que é enviada, por um erro de comunicação, Anne é enviada para viver em Green Gables com os irmãos idosos e solteiros, Marilla e Matthew Cuthbert, que esperavam um menino para ajudar na fazenda.
           </p>
-          <p className="text-foreground text-base md:text-lg leading-relaxed mb-4 indent-8">
+          <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-4 indent-6 md:indent-8">
             Com seus cabelos ruivos, imaginação febril e uma torrente incessante de "grandes palavras", Anne é imediatamente vista com desconfiança pela prática e austera Marilla. No entanto, o gentil e tímido Matthew rapidamente se encanta pelo espírito livre da menina.
           </p>
-          <p className="text-foreground text-base md:text-lg leading-relaxed mb-4 indent-8">
+          <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-4 indent-6 md:indent-8">
             A série é uma jornada emocionante de amadurecimento que vai além do romance rural. Ela explora como Anne, apesar de ser frequentemente ridicularizada por sua aparência e seu passado, usa sua imaginação e resiliência para encontrar seu lugar no mundo. Enquanto Anne luta para ser aceita na escola e na conservadora comunidade de Avonlea, ela transforma a vida de todos ao seu redor, incluindo a de sua melhor amiga, Diana Barry, e de seu rival intelectual, Gilbert Blythe.
           </p>
-          <p className="text-foreground text-base md:text-lg leading-relaxed mb-4 indent-8">
+          <p className="text-foreground text-sm md:text-base lg:text-lg leading-relaxed mb-3 md:mb-4 indent-6 md:indent-8">
             Anne With An E aborda temas atemporais e urgentes, como a busca por identidade, o poder da amizade, o bullying, o feminismo, o preconceito e a importância de pertencer a uma "família de alma". A série é uma celebração da individualidade e prova que, com coragem e imaginação, é possível superar qualquer adversidade e colorir a vida com esperança.
           </p>
         </div>
 
         {/* Trailer Section */}
-        <div className="mb-8">
-          <h2 className="text-4xl md:text-5xl font-serif text-foreground text-center mb-6">Trailler</h2>
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground text-center mb-4 md:mb-6">Trailler</h2>
           <div className="relative w-full max-w-3xl mx-auto aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
             <iframe 
               className="w-full h-full"
@@ -110,10 +110,10 @@ const Index = () => {
         </div>
 
         {/* Image Gallery Bottom */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <img src={anneImage5} alt="Cena da série" className="w-full h-64 object-cover rounded shadow-lg" />
-          <img src={anneImage6} alt="Cena da série" className="w-full h-64 object-cover rounded shadow-lg" />
-          <img src={anneImage7} alt="Cena da série" className="w-full h-64 object-cover rounded shadow-lg" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+          <img src={anneImage5} alt="Cena da série" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
+          <img src={anneImage6} alt="Cena da série" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
+          <img src={anneImage7} alt="Cena da série" className="w-full h-56 md:h-64 object-cover rounded shadow-lg" />
         </div>
       </main>
     </div>
