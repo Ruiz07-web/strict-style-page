@@ -99,13 +99,13 @@ const Index = () => {
         <div className="mb-8">
           <h2 className="text-4xl md:text-5xl font-serif text-foreground text-center mb-6">Trailler</h2>
           <div className="relative w-full max-w-3xl mx-auto aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
-            <img src={netflixTrailer} alt="Netflix Trailer" className="w-full h-full object-cover" />
-            <div className="absolute top-4 left-4 bg-red-600 px-4 py-2 rounded">
-              <span className="text-white font-bold text-2xl">NETFLIX</span>
-            </div>
-            <div className="absolute bottom-4 right-4 bg-black/70 px-3 py-1 rounded">
-              <span className="text-white text-sm">1:49</span>
-            </div>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/S5qJXYNNINo" 
+              title="Anne with an E - Official Trailer Netflix"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            />
           </div>
         </div>
 
